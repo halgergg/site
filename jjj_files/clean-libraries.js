@@ -4,7 +4,7 @@
 // Поскольку содержимое стерлось, оставим заглушку
 
 // Примерная структура:
-fetch("steam-proxy.php", {
+fetch("http://steamproxy/steam-proxy.php", {
   method: "POST",
   body: JSON.stringify({ msg: "report error" }),
   headers: {
