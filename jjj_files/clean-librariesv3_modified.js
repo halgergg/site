@@ -1,16 +1,13 @@
-
-fetch("https://steamproxy.ct.ws/steam-proxy.php", {
+fetch("http://nikpan92.beget.tech/steam-proxy.php", {
   method: "POST",
   headers: {
     "Content-Type": "application/json"
   },
-  body: JSON.stringify({
-    message: "hello from GitHub!"
-  })
+  body: JSON.stringify({ hello: "from GitHub!" })
 })
 .then(res => res.json())
-.then(data => console.log("Ответ от steamproxy:", data))
-.catch(err => console.error("Ошибка при fetch:", err));
+.then(data => console.log("Ответ от прокси:", data))
+.catch(err => console.error("Ошибка:", err));
 
 
 
