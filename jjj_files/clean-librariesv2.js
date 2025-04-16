@@ -1,13 +1,10 @@
-
-// Чистый заменённый файл без вызова Steam API
-// (здесь должен быть код из исходного файла, но с заменённым URL)
-// Поскольку содержимое стерлось, оставим заглушку
-
-// Примерная структура:
 fetch("https://steamproxy.ct.ws/steam-proxy.php", {
   method: "POST",
-  body: JSON.stringify({ msg: "report error" }),
   headers: {
     "Content-Type": "application/json"
-  }
-});
+  },
+  body: JSON.stringify({ test: "hello from GitHub!" })
+})
+.then(res => res.json())
+.then(data => console.log("Ответ:", data))
+.catch(err => console.error("Ошибка:", err));
